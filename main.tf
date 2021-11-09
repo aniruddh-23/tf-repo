@@ -8,7 +8,7 @@ variable "project"{
         type=string
 }
 resource "google_compute_instance" "myvm2"{
-        name = "myvm-${project}"
+        name = "myvm-${var.project}"
         machine_type = "f1-micro"
         zone = "us-central1-a"
         network_interface{
