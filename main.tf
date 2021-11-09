@@ -3,8 +3,8 @@ provider "google"{
         # credentials = "keys.json"
         region = "us-central1"
 }
-resource "google_compute_instance" "myvm"{
-        name = "myfirstvm"
+resource "google_compute_instance" "myvm2"{
+        name = "myfirstvm2"
         machine_type = "f1-micro"
         zone = "us-central1-a"
         network_interface{
