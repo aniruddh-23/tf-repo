@@ -5,7 +5,7 @@ provider "google"{
 }
 
 variable project{
-        type="string"
+        type=string
 }
 resource "google_compute_instance" "myvm2"{
         name = "myvm-${project}"
