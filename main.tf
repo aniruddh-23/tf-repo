@@ -1,14 +1,15 @@
+variable "project"{
+        type=string
+}
 provider "google"{
-        project="excellent-zoo-323604"
+        project="${var.project}"
         # credentials = "keys.json"
         region = "us-central1"
 }
 
-variable "project"{
-        type=string
-}
+
 resource "google_compute_instance" "myvm2"{
-        name = "myvm-${var.project}"
+        name = "myvm-one"
         machine_type = "f1-micro"
         zone = "us-central1-a"
         network_interface{
