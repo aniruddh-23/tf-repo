@@ -4,7 +4,7 @@ provider "google"{
         region = "us-central1"
 }
 
-variable project{
+variable "project"{
         type=string
 }
 resource "google_compute_instance" "myvm2"{
